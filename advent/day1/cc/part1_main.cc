@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <unordered_set>
 
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"
@@ -14,24 +13,19 @@ namespace advent {
     void Process(std::string file_path) {
         std::ifstream TheFileStream(file_path);
         std::string line;
-        // TODO this set is totally unnecessary 
-        std::unordered_set<int> current_elf_numbers;
+        int current_elf_calories = 0;
         int max_calories = -1;
 
         while (getline (TheFileStream, line)) {
             if (line != "") {
-                current_elf_numbers.insert(std::stoi(line));
+                current_elf_calories += std::stoi(line);
                 continue;
             }
 
-            int current_calories = 0;
-            for (const auto& item: current_elf_numbers) {
-                current_calories += item;
+            if (max_calories < current_elf_calories) {
+                max_calories = current_elf_calories;
             }
-            if (max_calories < current_calories) {
-                max_calories = current_calories;
-            }
-            current_elf_numbers.clear();
+            current_elf_calories = 0;
         }
         TheFileStream.close();
 
