@@ -14,6 +14,7 @@ namespace advent {
     void Process(std::string file_path) {
         std::ifstream TheFileStream(file_path);
         std::string line;
+        // TODO this set is totally unnecessary 
         std::unordered_set<int> current_elf_numbers;
         int max_calories = -1;
 
