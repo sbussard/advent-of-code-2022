@@ -21,6 +21,7 @@ Besides that obvious reasons about my abilities, there are more considerations:
 
 ## Solutions
 
-| Day | Part | Command to Run (from the project root)                                                |
-|-----|------|---------------------------------------------------------------------------------------|
-| 1   | 1    | `bazel run //advent/day1/cc:part1_main -- --file_path="$(pwd)/advent/day1/input.txt"` |
+| Day | Part | Command to Run (from the project root)                                                  |
+| --- | ---- | --------------------------------------------------------------------------------------- |
+| 1   | 1    | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=1` |
+| 1   | 2    | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=2` |
