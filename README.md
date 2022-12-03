@@ -21,7 +21,8 @@ Besides that obvious reasons about my abilities, there are more considerations:
 
 ## Solutions
 
-| Day | Part | Command to Run (from the project root)                                                  |
-| --- | ---- | --------------------------------------------------------------------------------------- |
-| 1   | 1    | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=1` |
-| 1   | 2    | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=2` |
+| Day | Part | Language   | Command to Run (from the project root)                                                  |
+| --- | ---- | ---------- | --------------------------------------------------------------------------------------- |
+| 1   | 1    | C++        | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=1` |
+| 1   | 2    | C++        | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=2` |
+| 2   | 1    | TypeScript | `bazel run //advent/day2/deno:bin`                                                      |
