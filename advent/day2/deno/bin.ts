@@ -14,10 +14,10 @@ const FILE_PATH = "advent/day2/input.txt";
 interface INode {
   value: string;
   points: number;
-  next: INode | undefined;
+  next?: INode;
 }
 
-const Node = (value: INode['value'], points: INode['points']): INode => ({ value, points, next: undefined });
+const Node = (value: INode['value'], points: INode['points']): INode => ({ value, points });
 const A = Node('Rock', 1);
 const B = Node('Paper', 2);
 const C = Node('Scissors', 3);
