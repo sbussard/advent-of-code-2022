@@ -1,8 +1,8 @@
-load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary")
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library")
 
 kt_jvm_binary(
     name = "bin",
     srcs = glob(["*.kt"]),
     data = ["//advent/day3:files"],
-    main_class = "com.example.BinKt",
+    main_class = "day3.BinKt",
 )

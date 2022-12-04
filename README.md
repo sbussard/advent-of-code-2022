@@ -27,4 +27,5 @@ Besides that obvious reasons about my abilities, there are more considerations:
 | 1   | 2    | C++        | `bazel run //advent/day1/cc:bin -- --file_path="$(pwd)/advent/day1/input.txt" --part=2` |
 | 2   | 1    | TypeScript | `bazel run //advent/day2/deno:bin -- --part=1`                                          |
 | 2   | 2    | TypeScript | `bazel run //advent/day2/deno:bin -- --part=2`                                          |
-| 3   | 1    | Kotlin     | `bazel run //advent/day3/kotlin:bin`                                                    |
+| 3   | 1    | Kotlin     | `bazel run //advent/day3/kotlin:bin -- 1`                                               |
+| 3   | 2    | Kotlin     | `bazel run //advent/day3/kotlin:bin -- 2`                                               |
