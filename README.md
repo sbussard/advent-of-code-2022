@@ -6,6 +6,11 @@
 
 This repo is a [bazel](https://bazel.build/) project... just because.
 
+## Feedback
+
+Please leave feedback under the corresponding [github issue](https://github.com/sbussard/advent-of-code-2022/issues).  
+If one doesn't exist for your topic, please create a new one.  
+
 ## It doesn't work for me
 
 Create an issue and I'll try to help if I can. Bazel is very advanced, which makes it hard to use sometimes.
