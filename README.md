@@ -34,4 +34,5 @@ Besides that obvious reasons about my abilities, there are more considerations:
 | 2   | 2    | TypeScript | `bazel run //advent/day2/deno:bin -- --part=2`                                          |
 | 3   | 1    | Kotlin     | `bazel run //advent/day3/kotlin:bin -- 1`                                               |
 | 3   | 2    | Kotlin     | `bazel run //advent/day3/kotlin:bin -- 2`                                               |
-| 4   | 1    | Rust       | `bazel run //advent/day4/rust:bin`                                                      |
+| 4   | 1    | Rust       | `bazel run //advent/day4/rust:bin -- 1`                                                 |
+| 4   | 2    | Rust       | `bazel run //advent/day4/rust:bin -- 2`                                                 |
