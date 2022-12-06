@@ -36,3 +36,4 @@ Besides that obvious reasons about my abilities, there are more considerations:
 | 3   | 2    | Kotlin     | `bazel run //advent/day3/kotlin:bin -- 2`                                               |
 | 4   | 1    | Rust       | `bazel run //advent/day4/rust:bin -- 1`                                                 |
 | 4   | 2    | Rust       | `bazel run //advent/day4/rust:bin -- 2`                                                 |
+| 5   | 1    | Python     | `bazel run //advent/day5/python:bin`                                                    |
