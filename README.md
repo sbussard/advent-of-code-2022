@@ -38,4 +38,5 @@ Besides that obvious reasons about my abilities, there are more considerations:
 | 4   | 2    | Rust       | `bazel run //advent/day4/rust:bin -- 2`                                                 |
 | 5   | 1    | Python     | `bazel run //advent/day5/python:bin -- 1`                                               |
 | 5   | 2    | Python     | `bazel run //advent/day5/python:bin -- 2`                                               |
-| 6   | 1    | Java       | `bazel run //advent/day6/java:bin`                                                      |
+| 6   | 1    | Java       | `bazel run //advent/day6/java:bin -- 1`                                                 |
+| 6   | 2    | Java       | `bazel run //advent/day6/java:bin -- 2`                                                 |

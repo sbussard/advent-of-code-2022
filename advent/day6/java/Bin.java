@@ -7,7 +7,7 @@ import java.util.HashSet;
 import io.vavr.control.Try;
 
 public class Bin {
-    static void CountCharacters(String line) {
+    static void CountCharacters(String line, int markerLength) {
         // use sliding window approach
         int l = 0;
         int r = 0;
@@ -17,7 +17,7 @@ public class Bin {
 
         Character c;
         while (r < line.length()) {
-            if (lettersInWindow.size() == 4) break;
+            if (lettersInWindow.size() == markerLength) break;
 
             c = line.charAt(r);
             if (lettersInWindow.contains(c)) {
@@ -40,14 +40,26 @@ public class Bin {
         Try.of(() -> file.readLine())
             .andThen(line -> {
                 if (line == null) return;
-                CountCharacters(line);
+                CountCharacters(line, 4);
                 Part1(file);
+            });
+    }
+
+    static void Part2(BufferedReader file) {
+        Try.of(() -> file.readLine())
+            .andThen(line -> {
+                if (line == null) return;
+                CountCharacters(line, 14);
+                Part2(file);
             });
     }
 
     public static void main(String[] args) {
         Try.of(() -> new FileReader("advent/day6/input.txt"))
             .map(file -> new BufferedReader(file))
-            .andThen(Bin::Part1);
+            .andThen(file -> {
+                if (args.length < 1 || args[0].equals("1")) Part1(file);
+                else Part2(file);
+            });
     }
 }
