@@ -89,7 +89,7 @@ pip_install(
 )
 
 # Java ------------------------------------------------------------------------
-## Note: java support comes
+## Note: java support comes with bazel, but maven needs separate setup
 
 http_archive(
     name = "rules_jvm_external",
