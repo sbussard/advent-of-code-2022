@@ -87,3 +87,22 @@ pip_install(
     name = "pip",
     requirements = "//third_party/python:requirements.txt",
 )
+
+# Java ------------------------------------------------------------------------
+## Note: java support comes
+
+http_archive(
+    name = "rules_jvm_external",
+    sha256 = "79c9850690d7614ecdb72d68394f994fef7534b292c4867ce5e7dec0aa7bdfad",
+    strip_prefix = "rules_jvm_external-2.8",
+    url = "https://github.com/bazelbuild/rules_jvm_external/archive/2.8.zip",
+)
+
+load("@rules_jvm_external//:defs.bzl", "maven_install")
+
+maven_install(
+    artifacts = [
+        "io.vavr:vavr:0.9.2",  # @maven//:io_vavr_vavr
+    ],
+    repositories = ["https://repo1.maven.org/maven2"],
+)
